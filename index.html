@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm-Clock-Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="clock-container">
+        <div id="clock">
+            <div id="hour-hand"></div>
+            <div id="minute-hand"></div>
+            <div id="second-hand"></div>
+        </div>
+        <div id="container-right">
+            <div id="time">10:25:00 AM</div>
+            <div id="set_time-container">
+            <div id="set-time">
+                <input class="alarm-blocks" id="hours" type="number" name="hours" min="1" max="12" value="00">
+                <span class="colons">:</span>
+                <input class="alarm-blocks" id="minutes" type="number" name="minutes" min="00" max="60" value="00">
+                <span class="colons">:</span>
+                <input class="alarm-blocks" id="seconds" type="number" name="seconds" min="00" max="60" value="00">
+                <select class="alarm-blocks" id="AM-PM">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+                <button id="set-alarm-button" onclick="addAlarm()">Set Alarm</button>
+            </div>
+            </div>
+            <div id="alarms">
+                <ol id="alarms-list">
+                    <!-- <li class="saved-alarms" id="alarm1">
+                        <div class="alarm-time" id="alarm-1">10:25:00 AM</div>
+                        <button onclick="deleteAlarm(this.id)">delete</button>
+                    </li> -->
+
+                </ol>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
